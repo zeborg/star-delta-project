@@ -17,11 +17,11 @@ body{
 .content{
     display:block;
     border-radius:5px;
-    font-size:20px;
+    font-size:18px;
     background-color:aliceblue;
     box-shadow:0px 10px 20px #C9C9C9;
 }
-.content .title{
+.content .title-top{
     font-size: 32px;
     padding:20px;
     color:aliceblue;
@@ -32,9 +32,19 @@ body{
     text-align:center;
     background-color:aliceblue;
 }
+.content .title-mid{
+    font-size: 32px;
+    padding:20px;
+    color:aliceblue;
+    text-shadow:0px 0px 8px slateblue;
+    box-shadow: 15px 5px 65px inset #c6ecff;
+    text-align:center;
+    background-color:aliceblue;
+}
+
 .content p{
     margin:0px;
-    padding:10px;
+    padding:20px;
 }
 .footer{
     padding-top:20px;

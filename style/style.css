@@ -1,0 +1,93 @@
+
+@font-face {
+    font-family: Signika;
+    src: url('fonts/Signika-Regular.ttf');
+}
+
+body{
+    background-color:#f7feff;
+    padding-top:2%;
+    padding-right:5%;
+    padding-left:5%;
+    font-family:Signika;
+}
+.header{
+    
+}
+.content{
+    display:block;
+    border-radius:5px;
+    font-size:20px;
+    background-color:aliceblue;
+    box-shadow:0px 10px 20px #C9C9C9;
+}
+.content .title{
+    font-size: 32px;
+    padding:20px;
+    color:aliceblue;
+    text-shadow:0px 0px 8px slateblue;
+    box-shadow: 15px 5px 65px inset #c6ecff;
+    border-top-right-radius:5px;
+    border-top-left-radius:5px;
+    text-align:center;
+    background-color:aliceblue;
+}
+.content p{
+    margin:0px;
+    padding:10px;
+}
+.footer{
+    padding-top:20px;
+    text-align:center;
+    display:block;
+    color:slateblue;
+}
+.container{
+    background-color:#fcfcfc;
+    padding:10px;
+}
+.nav-bar{
+    display:block;
+    border-radius:5px;
+    font-size:20px;
+    background-color:#c6ecff;
+    box-shadow:0px 10px 20px #C9C9C9;
+}
+.nav-bar .items{
+    color:#f7feff;
+}
+.nav-bar .items .logo{    
+    float:right;
+    font-size:32px;
+    color:slateblue;
+    padding:10px 40px;
+}
+.nav-bar .items .logo:hover{
+    border-radius:5px;
+    color:aliceblue;
+    background-color:slateblue;
+}
+.nav-bar .items ul{
+    list-style-type:none;
+    overflow:hidden;
+    padding:0px;
+}
+.nav-bar .items ul li{
+    padding: 20px 40px;
+    border:relative;
+    align-content: center;
+    float:left;
+}
+.nav-bar .items ul li:hover{
+    border-radius:5px;
+    text-shadow:0px 5px 20px grey;
+    background-color:#F5F5F5;
+}
+.nav-bar .items a:hover{
+    color:#444;
+}
+.nav-bar .items a{
+    color:slateblue;
+    text-align:center;
+    text-decoration:none;
+}

@@ -2,6 +2,7 @@
 	<head>
 		<title>BEEE Project</title>
 		<link rel="stylesheet" type="text/css" href="style/style.css">
+        <link rel="stylesheet" type="text/css" href="style/cc-icons.css">
 	</head>
 
 	<body>
@@ -19,12 +20,53 @@
                 </div>
             </div>
             <div class="content">
-                <div class="title-top">title-top</div>
+                <div class="title-top">What is a Star/Delta configuration?</div>
+                
+                <li class="topic">Star Configuration</li>
+                <center><img src="img/star-configuration.png" alt="Star Configuration"></center>
                 <p>content</p>
-                <div class="title-mid">title-mid</div>
+                
+                <li class="topic">Delta Configuration</li>
+                <center><img src="img/delta-configuration.png" alt="Delta Configuration"></center>
                 <p>content</p>
+                
+                <div class="title-mid">Star-Delta/Delta-Star Transformation</div>
+                <p>Star-Delta Transformations and Delta-Star Transformations allow us to convert impedances connected together in a 3-phase configuration from one type of connection to another.</p>
+                <div class="title-mid">Configuration Converter</div>
+                <div class="solver">
+                    <div class="topic-center">Delta-Star Converter</div>
+                    <img style="padding-bottom:20px" src="img/delta-star-convert.PNG" alt="Delta-Star Convert"><br>
+                    
+                    <p>To convert a delta network to an equivalent star network, we implement the formula below in relation with the image above:</p>
+                    <div class="formula">
+                        R<sub>A</sub> = R<sub>1</sub> * R<sub>2</sub> / (R<sub>1</sub> + R<sub>2</sub> + R<sub>3</sub>)<br>
+                        R<sub>B</sub> = R<sub>1</sub> * R<sub>3</sub> / (R<sub>1</sub> + R<sub>2</sub> + R<sub>3</sub>)<br>
+                        R<sub>C</sub> = R<sub>2</sub> * R<sub>3</sub> / (R<sub>1</sub> + R<sub>2</sub> + R<sub>3</sub>)<br>
+                    </div>
+                    
+                    
+                    <form>
+                        <input type="number" id="1" placeholder="R1"><input type="number" id="2" placeholder="R2"><input type="number" id="3" placeholder="R3">
+                        <input type="submit" value="Convert">
+                    </form>
+                    
+                    <div class="topic-center">Star-Delta Converter</div>
+                    <img src="img/star-delta-convert.PNG" alt="Star-Delta Convert"><br>
+                    
+                    <p>To convert a star network to an equivalent delta network, we implement the formula below in relation with the im3ge above:</p>
+                    <div class="formula">
+                        R<sub>1</sub> = (R<sub>A</sub> * R<sub>B</sub> / R<sub>C</sub>) + R<sub>A</sub> + R<sub>B</sub><br>
+                        R<sub>2</sub> = (R<sub>A</sub> * R<sub>C</sub> / R<sub>B</sub>) + R<sub>A</sub> + R<sub>C</sub><br>
+                        R<sub>3</sub> = (R<sub>B</sub> * R<sub>C</sub> / R<sub>A</sub>) + R<sub>B</sub> + R<sub>C</sub><br>
+                    </div>
+                    
+                    <form>
+                        <input type="number" id="4" placeholder="RA"><input type="number" id="5" placeholder="RB"><input type="number" id="6" placeholder="RC">
+                        <input type="submit" value="Convert">
+                    </form>
+                </div>
             </div>
-            <div class="footer">&copy; faggot inc.</div>
+            <div class="footer"><a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank"><i class="cc cc-by-sa"></i></a></div>
         </div>
 	</body>
 </html>

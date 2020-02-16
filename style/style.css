@@ -1,7 +1,7 @@
 
 @font-face {
     font-family: Signika;
-    src: url('fonts/Signika-Regular.ttf');
+    src: url('../fonts/Signika/Signika-Regular.ttf');
 }
 
 body{
@@ -12,6 +12,8 @@ body{
     font-family:Signika;
 }
 .header{
+    box-shadow:0px 0px 10px #C9C9C9;
+    border-radius:5px;
     
 }
 .content{
@@ -25,7 +27,7 @@ body{
     font-size: 32px;
     padding:20px;
     color:aliceblue;
-    text-shadow:0px 0px 8px slateblue;
+    text-shadow:1px 1px 15px darkblue;
     box-shadow: 15px 5px 65px inset #c6ecff;
     border-top-right-radius:5px;
     border-top-left-radius:5px;
@@ -36,21 +38,53 @@ body{
     font-size: 32px;
     padding:20px;
     color:aliceblue;
-    text-shadow:0px 0px 8px slateblue;
+    text-shadow:0px 0px 8px darkslateblue;
     box-shadow: 15px 5px 65px inset #c6ecff;
     text-align:center;
     background-color:aliceblue;
 }
 
 .content p{
+    color:darkslateblue;
     margin:0px;
+    padding:10px 20px;
+}
+.solver{
     padding:20px;
+    text-align:center;
+}
+.solver input{
+    width:80px;
+    background-color:inherit;
+    overflow:hidden;
+    margin-bottom:20px;
+}
+.content .topic{
+    padding:10px 20px;
+    font-size:28px;
+    text-decoration:underline;
+    color:darkcyan;
+}
+.content .formula{
+    font-style: italic;
+    font-size:24px;
+    color:brown;
+    padding:10px;
+}
+.content .solver .topic-center{
+    padding:10px 20px;
+    font-size:28px;
+    text-decoration:underline;
+    text-shadow:0px 0px 8px gray;
+    color:mediumpurple;
 }
 .footer{
     padding-top:20px;
     text-align:center;
+    font-size:20px;
     display:block;
     color:slateblue;
+    text-align: center;
 }
 .container{
     background-color:#fcfcfc;
@@ -61,7 +95,7 @@ body{
     border-radius:5px;
     font-size:20px;
     background-color:#c6ecff;
-    box-shadow:0px 10px 20px #C9C9C9;
+    box-shadow:0px -10px 45px inset cornflowerblue;
 }
 .nav-bar .items{
     color:#f7feff;
@@ -91,6 +125,7 @@ body{
 .nav-bar .items ul li:hover{
     border-radius:5px;
     text-shadow:0px 5px 20px grey;
+    box-shadow:0px -15px 25px inset #cfcfcf;
     background-color:#F5F5F5;
 }
 .nav-bar .items a:hover{

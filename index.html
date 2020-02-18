@@ -3,6 +3,8 @@
 		<title>BEEE Project</title>
 		<link rel="stylesheet" type="text/css" href="style/style.css">
         <link rel="stylesheet" type="text/css" href="style/cc-icons.css">
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+				<script src="js/main.js"></script>
 	</head>
 
 	<body>
@@ -14,55 +16,59 @@
                             <a href="dsds"><li>about the project</li></a>
                             <a href="5"><li>project members</li></a>
                             <a href="7"><li>references</li></a>
-                            <a href=""><div class="logo">| STAR⋆ΔDELTA |</div></a>
+                            <a href="#"><div class="logo">| STAR⋆ΔDELTA |</div></a>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="content">
+            <div class="content"><!--
                 <div class="title-top">What is a Star/Delta configuration?</div>
-                
+
                 <li class="topic">Star Configuration</li>
                 <center><img src="img/star-configuration.png" alt="Star Configuration"></center>
                 <p>content</p>
-                
+
                 <li class="topic">Delta Configuration</li>
                 <center><img src="img/delta-configuration.png" alt="Delta Configuration"></center>
                 <p>content</p>
-                
+							-->
                 <div class="title-mid">Star-Delta/Delta-Star Transformation</div>
-                <p>Star-Delta Transformations and Delta-Star Transformations allow us to convert impedances connected together in a 3-phase configuration from one type of connection to another.</p>
+                <p>The replacement of delta or mesh by equivalent star connection is known as <strong>delta – star transformation</strong>. The two connections are equivalent or identical to each other if the impedance is measured between any pair of lines. That means, the value of impedance will be the same if it is measured between any pair of lines irrespective of whether the delta is connected between the lines or its equivalent star is connected between that lines.</p>
                 <div class="title-mid">Configuration Converter</div>
                 <div class="solver">
                     <div class="topic-center">Delta-Star Converter</div>
                     <img style="padding-bottom:20px" src="img/delta-star-convert.PNG" alt="Delta-Star Convert"><br>
-                    
+
                     <p>To convert a delta network to an equivalent star network, we implement the formula below in relation with the image above:</p>
                     <div class="formula">
                         R<sub>A</sub> = R<sub>1</sub> * R<sub>2</sub> / (R<sub>1</sub> + R<sub>2</sub> + R<sub>3</sub>)<br>
                         R<sub>B</sub> = R<sub>1</sub> * R<sub>3</sub> / (R<sub>1</sub> + R<sub>2</sub> + R<sub>3</sub>)<br>
                         R<sub>C</sub> = R<sub>2</sub> * R<sub>3</sub> / (R<sub>1</sub> + R<sub>2</sub> + R<sub>3</sub>)<br>
                     </div>
-                    
-                    
-                    <form>
+
+
+                    <form id="star">
                         <input type="number" id="1" placeholder="R1"><input type="number" id="2" placeholder="R2"><input type="number" id="3" placeholder="R3">
-                        <input type="submit" value="Convert">
+												<a href="#delta">
+													<input type="button" id="conv" value="Convert">
+												</a>
                     </form>
-                    
+
                     <div class="topic-center">Star-Delta Converter</div>
                     <img src="img/star-delta-convert.PNG" alt="Star-Delta Convert"><br>
-                    
+
                     <p>To convert a star network to an equivalent delta network, we implement the formula below in relation with the image above:</p>
                     <div class="formula">
                         R<sub>1</sub> = (R<sub>A</sub> * R<sub>B</sub> / R<sub>C</sub>) + R<sub>A</sub> + R<sub>B</sub><br>
                         R<sub>2</sub> = (R<sub>A</sub> * R<sub>C</sub> / R<sub>B</sub>) + R<sub>A</sub> + R<sub>C</sub><br>
                         R<sub>3</sub> = (R<sub>B</sub> * R<sub>C</sub> / R<sub>A</sub>) + R<sub>B</sub> + R<sub>C</sub><br>
                     </div>
-                    
-                    <form>
+
+                    <form id="delta">
                         <input type="number" id="4" placeholder="RA"><input type="number" id="5" placeholder="RB"><input type="number" id="6" placeholder="RC">
-                        <input type="submit" value="Convert">
+												<a href="#star">
+	                        <input type="button" id="conv_rev" value="Convert">
+												</a>
                     </form>
                 </div>
             </div>
